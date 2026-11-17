@@ -33,14 +33,14 @@ repository = "https://github.com/biomejs/biome"
 independent = true
 
 [dependencies.biome_console]
-version = "0.5.7"
+version = "0.7.0"
 
 
 [dependencies.biome_diagnostics]
-version = "0.5.7"
+version = "0.7.0"
 
 [dependencies.biome_rowan]
-version = "0.5.7"
+version = "0.7.0"
 
 [dependencies.cfg-if]
 version = "1.0.0"

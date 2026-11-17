@@ -56,7 +56,9 @@ impl From<&SyntaxError> for FormatError {
     fn from(syntax_error: &SyntaxError) -> Self {
         match syntax_error {
             SyntaxError::MissingRequiredChild => FormatError::SyntaxError,
-            SyntaxError::UnexpectedMetavariable => FormatError::SyntaxError,
+            SyntaxError::UnexpectedMetavariable | SyntaxError::UnexpectedBogusNode => {
+                FormatError::SyntaxError
+            }
         }
     }
 }
